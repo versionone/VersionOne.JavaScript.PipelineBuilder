@@ -9,7 +9,6 @@ test('create_pipeline_run with defaults', t => {
     const instance_name = 'v1';
     const name = 'build run name';
     const reference = 'build run reference';
-    const when = 'always';
 
     const actual = create_pipeline_run(
         build_project, name, reference, initial_status, target_key, instance_name
