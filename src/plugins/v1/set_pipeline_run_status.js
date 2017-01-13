@@ -1,7 +1,7 @@
 import { ALWAYS } from './../constants';
 
 export const set_pipeline_run_status = (
-    build_run_oid, new_status, set_workitems_as_complete, instance_name,
+    build_run_oid, new_status, set_workitems_as_complete='true', instance_name,
     when=ALWAYS, additional_args={}, description=''
 ) => ({
     name: description,
