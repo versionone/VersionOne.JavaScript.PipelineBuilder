@@ -16,3 +16,7 @@ test('v1 plugin has push_link', t => {
 test('v1 plugin has set_workitem_status', t => {
     t.true(v1.hasOwnProperty("set_workitem_status"))
 });
+
+test('v1 plugin has set_epic_status', t => {
+    t.true(v1.hasOwnProperty("set_epic_status"))
+});
