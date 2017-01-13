@@ -1,5 +1,6 @@
-var set_workitem_status = function(number, status, current_status, instance_name, when) {
+const set_workitem_status = function(number, status, current_status, instance_name, when) {
     return {
+        name: '',
         plugin: {
             args: {
                 current_status,
@@ -18,6 +19,6 @@ var set_workitem_status = function(number, status, current_status, instance_name
 
 
 
-export const v1 = {
+export const v1 =  {
     set_workitem_status
 };
