@@ -29,3 +29,38 @@ test('set_workitem_status', t => {
 
     t.deepEqual(actual, expected);
 });
+
+test('create_pipeline_run', t => {
+    const target_key = 'target workspace key';
+    const build_project = 'Build Project';
+    const initial_status = 'In Progress';
+    const instance_name = 'v1';
+    const name = 'build run name';
+    const reference = 'build run reference';
+    const when = 'always';
+
+    const actual = v1.create_pipeline_run(
+        build_project, name, reference, initial_status, target_key, instance_name, when
+    );
+
+    const expected = {
+        name: '',
+        plugin: {
+            args: {
+                broid_target_key: target_key,
+                build_project,
+                initial_status,
+                instance_name,
+                name,
+                reference
+            },
+            label: 'VersionOne - Create Pipeline Run',
+            method: 'create_buildrun',
+            module: 'main',
+            name: 'v1plugin'
+        },
+        when
+    };
+
+    t.deepEqual(actual, expected);
+});
