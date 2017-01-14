@@ -5,6 +5,7 @@ import { canvas } from './plugins/canvas';
 import { deploy } from './plugins/deploy';
 import { github } from './plugins/github';
 import { gitlab } from './plugins/gitlab';
+import { hipchat } from './plugins/hipchat';
 import { utility } from './plugins/utility';
 import { v1 } from './plugins/v1';
 
@@ -16,6 +17,7 @@ export const plugins = {
     deploy,
     github,
     gitlab,
+    hipchat,
     utility,
     v1
 };

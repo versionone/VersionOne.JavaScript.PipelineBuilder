@@ -107,6 +107,10 @@ test('gitlab plugin exists', t => {
     t.true(plugins.hasOwnProperty('gitlab'));
 });
 
+test('hipchat plugin exists', t => {
+    t.true(plugins.hasOwnProperty('hipchat'));
+});
+
 test('utility plugin exists', t => {
     t.true(plugins.hasOwnProperty('utility'));
 });
