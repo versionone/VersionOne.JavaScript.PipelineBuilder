@@ -111,6 +111,10 @@ test('hipchat plugin exists', t => {
     t.true(plugins.hasOwnProperty('hipchat'));
 });
 
+test('jenkins plugin exists', t => {
+    t.true(plugins.hasOwnProperty('jenkins'));
+});
+
 test('utility plugin exists', t => {
     t.true(plugins.hasOwnProperty('utility'));
 });

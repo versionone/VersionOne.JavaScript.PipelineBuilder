@@ -6,6 +6,7 @@ import { deploy } from './plugins/deploy';
 import { github } from './plugins/github';
 import { gitlab } from './plugins/gitlab';
 import { hipchat } from './plugins/hipchat';
+import { jenkins } from './plugins/jenkins';
 import { utility } from './plugins/utility';
 import { v1 } from './plugins/v1';
 
@@ -18,6 +19,7 @@ export const plugins = {
     github,
     gitlab,
     hipchat,
+    jenkins,
     utility,
     v1
 };
