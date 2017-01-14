@@ -72,30 +72,6 @@ This pipeline expressed conditional logic in a declarative way, which is very di
 The aid of a graphical user interface may have helped us reason about some of the details of this pipeline, However some may want to express this same pipeline with code.
 Let's do it!
 
-
-```js
-import { create_stage, create_phase, create_pipeline, plugins } from 'pipelineBuilder';
-const { utility, v1 } = plugins;
-
-const set_to_ready = v1.set_workitem_status('D-1234', 'Ready', 'None', 'VersionOne', 'always');
-const set_to_done = v1.set_workitem_status('D-1234', 'Done', 'None', 'VersionOne', 'always');
-
-const description = "I want to conditionally set the status of the issue."
-const pick_status = utility.conditional('epic.isClosed', set_to_ready, set_to_done, 'always', description=description);
-
-const stage1 = create_stage('stage name', [pick_status]);
-
-const phase1 = create_phase('phase name', [stage1]);
-
-const pipeline = create_pipeline('pipeline name', 'My pipeline', [phase1]);
-
-const pretty_print = (json) => JSON.stringify(json, null, 2);
-
-pretty_print(pipeline);
-```
-
-Alternatively this can be restructed and read as:
-
 ```js
 import { create_stage, create_phase, create_pipeline, plugins } from './../src/pipeline';
 const { utility, v1 } = plugins;
