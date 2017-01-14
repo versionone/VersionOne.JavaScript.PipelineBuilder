@@ -73,7 +73,7 @@ The aid of a graphical user interface may have helped us reason about some of th
 Let's do it!
 
 
-```
+```js
 import { create_stage, create_phase, create_pipeline, plugins } from 'pipelineBuilder';
 const { utility, v1 } = plugins;
 
@@ -83,17 +83,35 @@ const set_to_done = v1.set_workitem_status('D-1234', 'Done', 'None', 'VersionOne
 const description = "I want to conditionally set the status of the issue."
 const pick_status = utility.conditional('epic.isClosed', set_to_ready, set_to_done, 'always', description=description);
 
-var stage1 = create_stage('stage name', [pick_status]);
+const stage1 = create_stage('stage name', [pick_status]);
 
-var phase1 = create_phase('phase name', [stage1]);
+const phase1 = create_phase('phase name', [stage1]);
 
-var pipeline = create_pipeline('pipeline name', 'My pipeline', [phase1]);
+const pipeline = create_pipeline('pipeline name', 'My pipeline', [phase1]);
 
 const pretty_print = (json) => JSON.stringify(json, null, 2);
 
 pretty_print(pipeline);
 ```
 
+Alternatively this can be restructed and read as:
+
+```js
+import { create_stage, create_phase, create_pipeline, plugins } from './../src/pipeline';
+const { utility, v1 } = plugins;
+
+const set_to_ready = v1.set_workitem_status('S-12345', 'Ready', 'None', '', 'always');
+const set_to_done = v1.set_workitem_status('S-12345', 'Done', 'None', '', 'always');
+
+const pipeline = create_pipeline('pipeline_as_code', 'description', [
+    create_phase('first_phase', [
+        create_stage('set_status', [
+            utility.conditional('some condition', set_to_ready, set_to_done, 'always')
+        ])
+    ])
+]);
+
+```
 
 
 ##Development
