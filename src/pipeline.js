@@ -4,6 +4,7 @@ import { bitbucket } from './plugins/bitbucket';
 import { canvas } from './plugins/canvas';
 import { deploy } from './plugins/deploy';
 import { github } from './plugins/github';
+import { gitlab } from './plugins/gitlab';
 import { utility } from './plugins/utility';
 import { v1 } from './plugins/v1';
 
@@ -14,6 +15,7 @@ export const plugins = {
     canvas,
     deploy,
     github,
+    gitlab,
     utility,
     v1
 };

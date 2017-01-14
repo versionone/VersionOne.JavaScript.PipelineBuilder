@@ -103,6 +103,10 @@ test('github plugin exists', t => {
     t.true(plugins.hasOwnProperty('github'));
 });
 
+test('gitlab plugin exists', t => {
+    t.true(plugins.hasOwnProperty('gitlab'));
+});
+
 test('utility plugin exists', t => {
     t.true(plugins.hasOwnProperty('utility'));
 });
