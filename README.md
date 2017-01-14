@@ -2,9 +2,8 @@
 
 Use this JavaScript library to build Continuum Pipeline Definitions with code! 
 
-Continuum pipeline definitions are declarative in nature providing a configuration as code approach and allowing reading a definition fairly easy.
-However, maintaining the definition can become difficult and often individuals with backgrounds in imperative programming languages that maintain the definitions
-would like a way to write code in favor of configuration.
+Continuum pipeline definitions are declarative in nature providing a configuration as code approach.
+Some people prefer their imperative programming languages and want to write code over configuration.
 
 Meet PipelineBuilder.
 
