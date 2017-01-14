@@ -1,14 +1,19 @@
 {
   "name": "pipelineBuilder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create VersionOne Continuum pipeline definitions with javascript!",
   "main": "index.js",
   "scripts": {
     "test": "ava",
     "lint": "eslint -c .eslintrc --cache ."
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "continuum",
+    "versionone",
+    "pipeline",
+    "javascript"
+  ],
+  "author": "walkerrandolphsmith@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "ava": "^0.17.0",
