@@ -6,7 +6,7 @@ export const terminate = (
     name: description,
     plugin: {
         args: additional_args,
-        label: 'Deploy - Deploy Terminate',
+        label: 'Deploy - Terminate',
         method: 'terminate',
         module: 'deployment',
         name: 'deploy'

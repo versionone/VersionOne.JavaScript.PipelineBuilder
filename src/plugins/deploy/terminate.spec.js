@@ -9,7 +9,7 @@ test('terminate with defaults', t => {
         name: '',
         plugin: {
             args: {},
-            label: 'Deploy - Deploy Terminate',
+            label: 'Deploy - Terminate',
             method: 'terminate',
             module: 'deployment',
             name: 'deploy'
@@ -33,7 +33,7 @@ test('terminate with overridden defaults', t => {
         name: description,
         plugin: {
             args: additional_arguments,
-            label: 'Deploy - Deploy Terminate',
+            label: 'Deploy - Terminate',
             method: 'terminate',
             module: 'deployment',
             name: 'deploy'
