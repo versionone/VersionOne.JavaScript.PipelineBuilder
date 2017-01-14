@@ -115,6 +115,10 @@ test('jenkins plugin exists', t => {
     t.true(plugins.hasOwnProperty('jenkins'));
 });
 
+test('octopus plugin exists', t => {
+    t.true(plugins.hasOwnProperty('octopus'));
+});
+
 test('utility plugin exists', t => {
     t.true(plugins.hasOwnProperty('utility'));
 });
