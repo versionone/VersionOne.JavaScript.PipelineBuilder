@@ -95,6 +95,10 @@ test('canvas plugin exists', t => {
     t.true(plugins.hasOwnProperty('canvas'));
 });
 
+test('deploy plugin exists', t => {
+    t.true(plugins.hasOwnProperty('deploy'));
+});
+
 test('utility plugin exists', t => {
     t.true(plugins.hasOwnProperty('utility'));
 });
