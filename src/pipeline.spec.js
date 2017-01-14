@@ -87,8 +87,8 @@ test('bamboo plugin exists', t => {
     t.true(plugins.hasOwnProperty('bamboo'));
 });
 
-test('bitBucketCloud plugin exists', t => {
-    t.true(plugins.hasOwnProperty('bitBucketCloud'));
+test('bitbucket plugin exists', t => {
+    t.true(plugins.hasOwnProperty('bitbucket'));
 });
 
 test('canvas plugin exists', t => {

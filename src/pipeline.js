@@ -1,6 +1,6 @@
 import { automate } from './plugins/automate';
 import { bamboo } from './plugins/bamboo';
-import { bitBucketCloud } from './plugins/bitBucketCloud';
+import { bitbucket } from './plugins/bitbucket';
 import { canvas } from './plugins/canvas';
 import { deploy } from './plugins/deploy';
 import { github } from './plugins/github';
@@ -10,7 +10,7 @@ import { v1 } from './plugins/v1';
 export const plugins = {
     automate,
     bamboo,
-    bitBucketCloud,
+    bitbucket,
     canvas,
     deploy,
     github,
