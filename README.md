@@ -76,8 +76,8 @@ Let's do it!
 import { create_stage, create_phase, create_pipeline, plugins } from './../src/pipeline';
 const { utility, v1 } = plugins;
 
-const set_to_ready = v1.set_workitem_status('S-12345', 'Ready', 'None', '', 'always');
-const set_to_done = v1.set_workitem_status('S-12345', 'Done', 'None', '', 'always');
+const set_to_ready = v1.set_workitem_status('S-12345', 'Ready', 'None', 'VersionOne', 'always');
+const set_to_done = v1.set_workitem_status('S-12345', 'Done', 'None', 'VersionOne', 'always');
 
 const pipeline = create_pipeline('pipeline as code', 'description', [
     create_phase('phase name', [
