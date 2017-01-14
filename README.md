@@ -13,8 +13,8 @@ The pipeline may look something like this:
 
 ```
 {
-    name: "pipeline name",
-    description: "My pipeline",
+    name: "pipeline as code",
+    description: "description",
     phases: [
         {
             name: "phase name",
@@ -23,7 +23,7 @@ The pipeline may look something like this:
                     name: "stage name",
                     steps: [
                         {
-                            name: "I want to conditionally set the status of the issue.",
+                            name: "",
                             plugin: {
                                 args: {
                                     action: {
@@ -79,10 +79,10 @@ const { utility, v1 } = plugins;
 const set_to_ready = v1.set_workitem_status('S-12345', 'Ready', 'None', '', 'always');
 const set_to_done = v1.set_workitem_status('S-12345', 'Done', 'None', '', 'always');
 
-const pipeline = create_pipeline('pipeline_as_code', 'description', [
-    create_phase('first_phase', [
-        create_stage('set_status', [
-            utility.conditional('some condition', set_to_ready, set_to_done, 'always')
+const pipeline = create_pipeline('pipeline as code', 'description', [
+    create_phase('phase name', [
+        create_stage('stage name', [
+            utility.conditional('epic.isClosed', set_to_ready, set_to_done, 'always')
         ])
     ])
 ]);
