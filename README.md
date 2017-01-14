@@ -80,13 +80,14 @@ const { utility, v1 } = plugins;
 const set_to_ready = v1.set_workitem_status('D-1234', 'Ready', 'None', 'VersionOne', 'always');
 const set_to_done = v1.set_workitem_status('D-1234', 'Done', 'None', 'VersionOne', 'always');
 
-const pick_status = utility.conditional('epic.isClosed', set_to_ready, set_to_done, 'always');
+const description = "I want to conditionally set the status of the issue."
+const pick_status = utility.conditional('epic.isClosed', set_to_ready, set_to_done, 'always', description=description);
 
-var stage1 = create_stage('set_status', [pick_status]);
+var stage1 = create_stage('stage name', [pick_status]);
 
-var phase1 = create_phase('first_phase', [stage1]);
+var phase1 = create_phase('phase name', [stage1]);
 
-var pipeline = create_pipeline('pipeline_as_code', 'description', [phase1]);
+var pipeline = create_pipeline('pipeline name', 'My pipeline', [phase1]);
 
 const pretty_print = (json) => JSON.stringify(json, null, 2);
 
