@@ -1,4 +1,4 @@
-import { ALWAYS } from './../constants'
+import { ALWAYS } from './../constants';
 
 export const conditional = (
     expression, if_block, else_block, when=ALWAYS, additional_arguments={}, description=''
@@ -10,10 +10,10 @@ export const conditional = (
             else_action: else_block.plugin,
             expression
         }),
-        label: "Utility - Conditional",
-        method: "conditional",
-        module: "utility",
-        name: "utility"
+        label: 'Utility - Conditional',
+        method: 'conditional',
+        module: 'utility',
+        name: 'utility'
     },
     when
 });

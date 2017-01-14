@@ -53,10 +53,10 @@ test('set_workitem_status_conditionaly', t => {
                                                 number: story_number,
                                                 status: ready_status
                                             },
-                                            label: "VersionOne - Set Workitem Status",
-                                            method: "set_workitem_status",
-                                            module: "main",
-                                            name: "v1plugin"
+                                            label: 'VersionOne - Set Workitem Status',
+                                            method: 'set_workitem_status',
+                                            module: 'main',
+                                            name: 'v1plugin'
                                         },
                                         else_action: {
                                             args: {
@@ -65,17 +65,17 @@ test('set_workitem_status_conditionaly', t => {
                                                 number: story_number,
                                                 status: done_status
                                             },
-                                            label: "VersionOne - Set Workitem Status",
-                                            method: "set_workitem_status",
-                                            module: "main",
-                                            name: "v1plugin"
+                                            label: 'VersionOne - Set Workitem Status',
+                                            method: 'set_workitem_status',
+                                            module: 'main',
+                                            name: 'v1plugin'
                                         },
                                         expression: condition
                                     },
-                                    label: "Utility - Conditional",
-                                    method: "conditional",
-                                    module: "utility",
-                                    name: "utility"
+                                    label: 'Utility - Conditional',
+                                    method: 'conditional',
+                                    module: 'utility',
+                                    name: 'utility'
                                 },
                                 when: when
                             }

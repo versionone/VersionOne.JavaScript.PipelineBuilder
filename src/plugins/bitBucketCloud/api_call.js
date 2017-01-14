@@ -1,7 +1,7 @@
 import { ALWAYS, GET } from './../constants';
 
 export const api_call = (
-    type=GET, request, data={},response_key, instance_name,
+    type=GET, request, data={}, response_key, instance_name,
     when=ALWAYS, additional_args={}, description=''
 ) => ({
     name: description,

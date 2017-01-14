@@ -12,10 +12,10 @@ export const set_workitem_status = (
             number,
             status
         }),
-        label: "VersionOne - Set Workitem Status",
-        method: "set_workitem_status",
-        module: "main",
-        name: "v1plugin"
+        label: 'VersionOne - Set Workitem Status',
+        method: 'set_workitem_status',
+        module: 'main',
+        name: 'v1plugin'
     },
     when
 });

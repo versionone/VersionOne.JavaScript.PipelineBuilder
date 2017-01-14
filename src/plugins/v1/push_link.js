@@ -11,7 +11,7 @@ export const push_link = (
             linkurl,
             linkname,
             onmenu,
-            instance_name,
+            instance_name
         }),
         label: 'VersionOne - Push Link',
         method: 'push_link',

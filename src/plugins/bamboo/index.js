@@ -1,7 +1,7 @@
 import { ALWAYS } from './../constants';
 
 const build = (
-    build_id, revision, parameters, wait="true", inherit_build_status="true", instance_name,
+    build_id, revision, parameters, wait='true', inherit_build_status='true', instance_name,
     when=ALWAYS, additional_args={}, description=''
 ) => ({
     name: description,

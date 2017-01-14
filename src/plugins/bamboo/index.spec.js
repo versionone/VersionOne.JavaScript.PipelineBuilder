@@ -3,12 +3,16 @@ import { bamboo } from './';
 import { ALWAYS } from './../constants';
 
 test('automate plugin has build', t => {
-    t.true(bamboo.hasOwnProperty("build"))
+    t.true(bamboo.hasOwnProperty('build'));
 });
 
 const build_id = 'build id';
 const revision = '1';
-const parameters = ``;
+const parameters = `
+- yaml
+  - this is awesome
+  - but not really
+`;
 const wait = 'true';
 const inherit_build_status = 'true';
 const instance_name = 'bamboo';

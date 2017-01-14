@@ -2,11 +2,11 @@ import test from 'ava';
 import { conditional } from './conditional';
 import { ALWAYS } from './../constants';
 
+const expression = 'a === 3';
+const if_block = { plugin: 'if_block' };
+const else_block = { plugin: 'else_block' };
+
 test('conditional with defaults', t => {
-    const expression = 'a === 3';
-    const if_block = { plugin: "if_block" };
-    const else_block = { plugin: "else_block" };
-    
     const actual = conditional(expression, if_block, else_block);
 
     const expected = {
@@ -29,16 +29,13 @@ test('conditional with defaults', t => {
 });
 
 test('conditional with overridden defaults', t => {
-    const expression = 'a === 3';
-    const if_block = { plugin: "if_block" };
-    const else_block = { plugin: "else_block" };
     const when = 'never';
     const additional_key = 'additional_key';
     const additional_arguments = {
         [additional_key]: additional_key
     };
-    const description = 'description'; 
-    
+    const description = 'description';
+
     const actual = conditional(
         expression, if_block, else_block, when, additional_arguments, description
     );

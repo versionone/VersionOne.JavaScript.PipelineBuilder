@@ -5,7 +5,7 @@ test('create_stage with defaults', t => {
     const actual = create_stage();
 
     const expected = {
-        name: "",
+        name: '',
         steps: []
     };
 
@@ -30,7 +30,7 @@ test('create_phase with defaults', t => {
     const actual = create_phase();
 
     const expected = {
-        name: "",
+        name: '',
         stages: []
     };
 
@@ -55,8 +55,8 @@ test('create_pipeline with defaults', t => {
     const actual = create_pipeline();
 
     const expected = {
-        name: "",
-        description: "",
+        name: '',
+        description: '',
         phases: []
     };
 
@@ -80,25 +80,25 @@ test('create_pipeline without defaults', t => {
 
 
 test('automate plugin exists', t => {
-    t.true(plugins.hasOwnProperty('automate'))
+    t.true(plugins.hasOwnProperty('automate'));
 });
 
 test('bamboo plugin exists', t => {
-    t.true(plugins.hasOwnProperty('bamboo'))
+    t.true(plugins.hasOwnProperty('bamboo'));
 });
 
 test('bitBucketCloud plugin exists', t => {
-    t.true(plugins.hasOwnProperty('bitBucketCloud'))
+    t.true(plugins.hasOwnProperty('bitBucketCloud'));
 });
 
 test('canvas plugin exists', t => {
-    t.true(plugins.hasOwnProperty('canvas'))
+    t.true(plugins.hasOwnProperty('canvas'));
 });
 
 test('utility plugin exists', t => {
-    t.true(plugins.hasOwnProperty('utility'))
+    t.true(plugins.hasOwnProperty('utility'));
 });
 
 test('v1 plugin exists', t => {
-    t.true(plugins.hasOwnProperty('v1'))
+    t.true(plugins.hasOwnProperty('v1'));
 });

@@ -3,7 +3,7 @@ import { automate } from './';
 import { ALWAYS } from './../constants';
 
 test('automate plugin has run_task', t => {
-    t.true(automate.hasOwnProperty("run_task"))
+    t.true(automate.hasOwnProperty('run_task'));
 });
 
 const task = 'task';
