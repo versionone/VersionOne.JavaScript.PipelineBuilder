@@ -1,5 +1,5 @@
 import test from 'ava';
-import { create_stage, create_phase, create_pipeline, plugins } from './pipeline';
+import { create_stage, create_phase, create_pipeline, plugins } from './../src/pipeline';
 const { utility, v1 } = plugins;
 
 test('set_workitem_status_conditionaly', t => {

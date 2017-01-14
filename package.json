@@ -29,6 +29,7 @@
   },
   "ava": {
     "files": [
+      "./tests/**/*.test.js",
       "./src/**/*.spec.js"
     ],
     "source": [
