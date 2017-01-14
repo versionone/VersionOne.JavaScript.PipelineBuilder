@@ -80,22 +80,21 @@ test('create_pipeline without defaults', t => {
 
 
 test('automate plugin exists', t => {
-    const name = 'automate';
-    t.true(plugins.hasOwnProperty(name))
+    t.true(plugins.hasOwnProperty('automate'))
 });
 
 test('bamboo plugin exists', t => {
-    const name = 'bamboo';
-    t.true(plugins.hasOwnProperty(name))
+    t.true(plugins.hasOwnProperty('bamboo'))
 });
 
+test('bitBucketCloud plugin exists', t => {
+    t.true(plugins.hasOwnProperty('bitBucketCloud'))
+});
 
 test('utility plugin exists', t => {
-    const name = 'utility';
-    t.true(plugins.hasOwnProperty(name))
+    t.true(plugins.hasOwnProperty('utility'))
 });
 
 test('v1 plugin exists', t => {
-    const name = 'v1';
-    t.true(plugins.hasOwnProperty(name))
+    t.true(plugins.hasOwnProperty('v1'))
 });

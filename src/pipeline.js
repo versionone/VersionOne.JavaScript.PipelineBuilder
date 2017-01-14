@@ -1,11 +1,13 @@
 import { automate } from './plugins/automate';
 import { bamboo } from './plugins/bamboo';
+import { bitBucketCloud } from './plugins/bitBucketCloud';
 import { utility } from './plugins/utility';
 import { v1 } from './plugins/v1';
 
 export const plugins = {
     automate,
     bamboo,
+    bitBucketCloud,
     utility,
     v1
 };
