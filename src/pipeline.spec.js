@@ -84,6 +84,12 @@ test('automate plugin exists', t => {
     t.true(plugins.hasOwnProperty(name))
 });
 
+test('bamboo plugin exists', t => {
+    const name = 'bamboo';
+    t.true(plugins.hasOwnProperty(name))
+});
+
+
 test('utility plugin exists', t => {
     const name = 'utility';
     t.true(plugins.hasOwnProperty(name))
