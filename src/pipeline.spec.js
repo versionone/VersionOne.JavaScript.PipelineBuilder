@@ -78,12 +78,18 @@ test('create_pipeline without defaults', t => {
     t.deepEqual(actual, expected);
 });
 
-test('v1 plugin exists', t => {
-    const name = 'v1';
+
+test('automate plugin exists', t => {
+    const name = 'automate';
     t.true(plugins.hasOwnProperty(name))
 });
 
 test('utility plugin exists', t => {
     const name = 'utility';
+    t.true(plugins.hasOwnProperty(name))
+});
+
+test('v1 plugin exists', t => {
+    const name = 'v1';
     t.true(plugins.hasOwnProperty(name))
 });
