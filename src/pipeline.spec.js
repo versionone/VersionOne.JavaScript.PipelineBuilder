@@ -91,6 +91,10 @@ test('bitBucketCloud plugin exists', t => {
     t.true(plugins.hasOwnProperty('bitBucketCloud'))
 });
 
+test('canvas plugin exists', t => {
+    t.true(plugins.hasOwnProperty('canvas'))
+});
+
 test('utility plugin exists', t => {
     t.true(plugins.hasOwnProperty('utility'))
 });
