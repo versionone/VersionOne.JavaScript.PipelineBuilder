@@ -2,12 +2,12 @@ import test from 'ava';
 import { set_pipeline_run_status } from './set_pipeline_run_status';
 import { ALWAYS } from './../constants';
 
-test('set_pipeline_run_status with defaults', t => {
-    const build_run_oid = 'B-12345';
-    const new_status = 'Ready';
-    const instance_name = 'v1';
-    const complete_workitems = 'false';
+const build_run_oid = 'B-12345';
+const new_status = 'Ready';
+const instance_name = 'v1';
+const complete_workitems = 'false';
 
+test('set_pipeline_run_status with defaults', t => {
     const actual = set_pipeline_run_status(
         build_run_oid, new_status, complete_workitems, instance_name
     );
@@ -33,11 +33,6 @@ test('set_pipeline_run_status with defaults', t => {
 });
 
 test('set_pipeline_run_status with overridden defaults', t => {
-    const build_run_oid = 'B-12345';
-    const new_status = 'Ready';
-    const instance_name = 'v1';
-    const complete_workitems = 'false';
-    
     const when = 'never';
     const additional_key = 'additional_key';
     const additional_arguments = {

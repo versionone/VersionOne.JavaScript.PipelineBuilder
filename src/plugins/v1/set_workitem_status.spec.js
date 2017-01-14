@@ -2,12 +2,12 @@ import test from 'ava';
 import { set_workitem_status } from './set_workitem_status';
 import { ALWAYS } from './../constants';
 
-test('set_workitem_status with defaults', t => {
-    const current_status = 'current';
-    const instance_name = 'instance name';
-    const number = 'S-12345';
-    const status = 'status';
+const current_status = 'current';
+const instance_name = 'instance name';
+const number = 'S-12345';
+const status = 'status';
 
+test('set_workitem_status with defaults', t => {
     const actual = set_workitem_status(number, status, current_status, instance_name);
 
     const expected = {
@@ -31,10 +31,6 @@ test('set_workitem_status with defaults', t => {
 });
 
 test('set_workitem_status with overridden defaults', t => {
-    const current_status = 'current';
-    const instance_name = 'instance name';
-    const number = 'S-12345';
-    const status = 'status';
     const when = 'never';
     const additional_key = 'additional_key';
     const additional_arguments = {

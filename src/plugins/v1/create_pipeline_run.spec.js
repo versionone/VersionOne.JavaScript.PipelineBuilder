@@ -2,14 +2,14 @@ import test from 'ava';
 import { create_pipeline_run } from './create_pipeline_run';
 import { ALWAYS } from './../constants';
 
-test('create_pipeline_run with defaults', t => {
-    const target_key = 'target workspace key';
-    const build_project = 'Build Project';
-    const initial_status = 'In Progress';
-    const instance_name = 'v1';
-    const name = 'build run name';
-    const reference = 'build run reference';
+const target_key = 'target workspace key';
+const build_project = 'Build Project';
+const initial_status = 'In Progress';
+const instance_name = 'v1';
+const name = 'build run name';
+const reference = 'build run reference';
 
+test('create_pipeline_run with defaults', t => {
     const actual = create_pipeline_run(
         build_project, name, reference, initial_status, target_key, instance_name
     );
@@ -37,12 +37,6 @@ test('create_pipeline_run with defaults', t => {
 });
 
 test('create_pipeline_run with overridden defaults', t => {
-    const target_key = 'target workspace key';
-    const build_project = 'Build Project';
-    const initial_status = 'In Progress';
-    const instance_name = 'v1';
-    const name = 'build run name';
-    const reference = 'build run reference';
     const when = 'never';
     const additional_key = 'additional_key';
     const additional_arguments = {
