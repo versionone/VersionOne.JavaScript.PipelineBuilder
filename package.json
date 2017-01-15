@@ -4,7 +4,8 @@
   "description": "Create VersionOne Continuum pipeline definitions with javascript!",
   "main": "index.js",
   "scripts": {
-    "test": "ava",
+    "test": "npm run specs && npm run lint",
+    "specs": "ava",
     "lint": "eslint -c .eslintrc --cache ."
   },
   "keywords": [
