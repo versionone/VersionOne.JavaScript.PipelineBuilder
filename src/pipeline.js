@@ -8,6 +8,7 @@ import { gitlab } from './plugins/gitlab';
 import { hipchat } from './plugins/hipchat';
 import { jenkins } from './plugins/jenkins';
 import { octopus } from './plugins/octopus';
+import { skytap } from './plugins/skytap';
 import { utility } from './plugins/utility';
 import { v1 } from './plugins/v1';
 
@@ -22,6 +23,7 @@ export const plugins = {
     hipchat,
     jenkins,
     octopus,
+    skytap,
     utility,
     v1
 };

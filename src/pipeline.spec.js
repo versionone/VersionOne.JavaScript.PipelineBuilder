@@ -119,6 +119,10 @@ test('octopus plugin exists', t => {
     t.true(plugins.hasOwnProperty('octopus'));
 });
 
+test('skytap plugin exists', t => {
+    t.true(plugins.hasOwnProperty('skytap'));
+});
+
 test('utility plugin exists', t => {
     t.true(plugins.hasOwnProperty('utility'));
 });
