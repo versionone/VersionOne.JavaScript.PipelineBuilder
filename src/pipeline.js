@@ -9,6 +9,7 @@ import { hipchat } from './plugins/hipchat';
 import { jenkins } from './plugins/jenkins';
 import { octopus } from './plugins/octopus';
 import { skytap } from './plugins/skytap';
+import { tfs } from './plugins/tfs';
 import { utility } from './plugins/utility';
 import { v1 } from './plugins/v1';
 
@@ -24,6 +25,7 @@ export const plugins = {
     jenkins,
     octopus,
     skytap,
+    tfs,
     utility,
     v1
 };

@@ -123,6 +123,10 @@ test('skytap plugin exists', t => {
     t.true(plugins.hasOwnProperty('skytap'));
 });
 
+test('tfs plugin exists', t => {
+    t.true(plugins.hasOwnProperty('tfs'));
+});
+
 test('utility plugin exists', t => {
     t.true(plugins.hasOwnProperty('utility'));
 });
