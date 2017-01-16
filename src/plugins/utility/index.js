@@ -14,7 +14,7 @@ import { sleep } from './sleep';
 import { parse_data } from './parse_data';
 import { get_next_id } from './get_next_id';
 import { find_in_array } from './find_in_array';
-import { python_script} from './python_script';
+import { python_script } from './python_script';
 
 export const utility = {
     conditional,
