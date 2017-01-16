@@ -8,6 +8,7 @@ import { show_workspace_data } from './show_workspace_data';
 import { apply_label } from './apply_label';
 import { loop } from './loop';
 import { end } from './end';
+import { http } from './http';
 
 export const utility = {
     conditional,
@@ -19,5 +20,6 @@ export const utility = {
     show_workspace_data,
     apply_label,
     loop,
-    end
+    end,
+    http
 };
