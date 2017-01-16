@@ -1,21 +1,21 @@
 import { ALWAYS } from './../constants';
+import { get_definition } from './../base';
 
 const run_task = (
     task, version, initial_data,
     when=ALWAYS, additional_args={}, description=''
-) => ({
-    name: description,
-    plugin: {
-        args: Object.assign(additional_args, {
-            task, version, initial_data
-        }),
+) => get_definition(
+    {
+        task, version, initial_data
+    },
+    {
         label: 'Automate - Run Task',
         method: 'runtask',
         module: 'task',
         name: 'automate'
     },
-    when
-});
+    when, additional_args, description
+);
 
 export const automate = {
     run_task

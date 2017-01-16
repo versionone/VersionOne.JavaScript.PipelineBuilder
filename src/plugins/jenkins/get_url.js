@@ -1,20 +1,19 @@
 import { ALWAYS } from './../constants';
+import { get_definition } from './../base';
 
 export const get_url = (
     path, target, instance_name,
     when=ALWAYS, additional_args={}, description=''
-) => ({
-    name: description,
-    plugin: {
-        args: Object.assign(additional_args, {
-            path,
-            target,
-            instance_name
-        }),
+) => get_definition({
+        path,
+        target,
+        instance_name
+    },
+    {
         label: 'Jenkins - Get URL',
         method: 'build',
         module: 'job',
         name: 'jenkins'
     },
-    when
-});
+    when, additional_args, description
+);

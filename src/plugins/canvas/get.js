@@ -1,19 +1,18 @@
 import { ALWAYS } from './../constants';
+import { get_definition } from './../base';
 
 export const get = (
     key, resource,
     when=ALWAYS, additional_args={}, description=''
-) => ({
-    name: description,
-    plugin: {
-        args: Object.assign(additional_args, {
-            key,
-            resource
-        }),
+) => get_definition({
+        key,
+        resource
+    },
+    {
         label: 'Canvas - Get',
         method: 'get',
         module: 'main',
         name: 'canvas'
     },
-    when
-});
+    when, additional_args, description
+);

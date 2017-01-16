@@ -1,15 +1,16 @@
 import { ALWAYS } from './../constants';
+import { get_definition } from './../base';
 
 export const show_summary = (
     when=ALWAYS, additional_args={}, description=''
-) => ({
-    name: description,
-    plugin: {
-        args: additional_args,
+) =>  get_definition({
+
+    },
+    {
         label: 'Github - Show Summary',
         method: 'show_summary',
         module: 'main',
         name: 'github'
     },
-    when
-});
+    when, additional_args, description
+);

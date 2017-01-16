@@ -1,15 +1,16 @@
 import { ALWAYS } from './../constants';
+import { get_definition } from './../base';
 
 export const terminate = (
     when=ALWAYS, additional_args={}, description=''
-) => ({
-    name: description,
-    plugin: {
-        args: additional_args,
+) => get_definition({
+
+    },
+    {
         label: 'Deploy - Terminate',
         method: 'terminate',
         module: 'deployment',
         name: 'deploy'
     },
-    when
-});
+    when, additional_args, description
+);

@@ -1,21 +1,20 @@
 import { ALWAYS } from './../constants';
+import { get_definition } from './../base';
 
 export const get_file = (
     repository, branch, path, response_key,
     when=ALWAYS, additional_args={}, description=''
-) => ({
-    name: description,
-    plugin: {
-        args: Object.assign(additional_args, {
-            repository,
-            branch,
-            path,
-            response_key
-        }),
+) => get_definition({
+        repository,
+        branch,
+        path,
+        response_key
+    },
+    {
         label: 'Github - Get File',
         method: 'get_file',
         module: 'main',
         name: 'github'
     },
-    when
-});
+    when, additional_args, description
+);
