@@ -11,6 +11,7 @@ import { end } from './end';
 import { http } from './http';
 import { log } from './log';
 import { sleep } from './sleep';
+import { parse_data } from './parse_data';
 
 export const utility = {
     conditional,
@@ -25,5 +26,6 @@ export const utility = {
     end,
     http,
     log,
-    sleep
+    sleep,
+    parse_data
 };
