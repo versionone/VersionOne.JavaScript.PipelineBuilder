@@ -13,6 +13,7 @@ import { log } from './log';
 import { sleep } from './sleep';
 import { parse_data } from './parse_data';
 import { get_next_id } from './get_next_id';
+import { find_in_array } from './find_in_array';
 
 export const utility = {
     conditional,
@@ -29,5 +30,6 @@ export const utility = {
     log,
     sleep,
     parse_data,
-    get_next_id
+    get_next_id,
+    find_in_array
 };
