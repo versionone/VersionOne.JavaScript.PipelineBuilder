@@ -3,7 +3,7 @@ import { get_definition } from './../base';
 
 export const show_summary = (
     when=ALWAYS, additional_args={}, description=''
-) =>  get_definition({
+) => get_definition({
 
     },
     {

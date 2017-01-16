@@ -1,5 +1,5 @@
 import { check_all_systems_go } from './check_all_systems_go';
-import { check_blocking_issues } from './check_blocking_issues'
+import { check_blocking_issues } from './check_blocking_issues';
 import { check_epic_completeness } from './check_epic_completeness';
 import { check_workitem_dependencies } from './check_workitem_dependencies';
 import { custom_query } from './custom_query';

@@ -16,8 +16,7 @@ test('get_definition', t => {
         overriden_argument: 'this argument will not be'
     };
     const description = 'description';
-    
-    
+
     const actual = get_definition(
         args, meta, when, additional_arguments, description
     );
