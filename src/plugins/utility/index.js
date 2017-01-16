@@ -18,6 +18,7 @@ import { python_script } from './python_script';
 import { add_manifest } from './bucket/add_manifest';
 import { get_globals } from './bucket/get_globals';
 import { set_global } from './bucket/set_global';
+import { load } from './bucket/load';
 
 export const utility = {
     conditional,
@@ -39,5 +40,6 @@ export const utility = {
     python_script,
     add_manifest,
     get_globals,
-    set_global
+    set_global,
+    load
 };
