@@ -1,5 +1,5 @@
-import { ALWAYS } from './../constants';
-import { get_definition } from './../base';
+import { ALWAYS } from './../../constants';
+import { get_definition } from './../../base';
 
 export const set_global = (
     key, value,
