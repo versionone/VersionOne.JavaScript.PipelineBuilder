@@ -2,19 +2,18 @@ import { ALWAYS } from './../../constants';
 import { get_definition } from './../../base';
 
 export const load_revision = (
-    project, artifact_name, revision, workspace_key,
+    package_name, revision, globals_key,
     when=ALWAYS, additional_args={}, description=''
 ) => get_definition(
     {
-        project_name: project,
-        artifact_name,
+        package: package_name,
         revision,
-        key: workspace_key
+        globals_key
     },
     {
-        label: 'Flow - Artifact - Load Revision',
-        method: 'load_artifact_revision',
-        module: 'artifact',
+        label: 'Flow - Package - Load Revision',
+        method: 'load_revision',
+        module: 'package',
         name: 'flow'
     },
     when, additional_args, description

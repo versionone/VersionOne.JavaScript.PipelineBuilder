@@ -1,18 +1,19 @@
 import { ALWAYS } from './../../constants';
 import { get_definition } from './../../base';
 
-export const set_global = (
-    key, value,
+export const evaluate_workitems = (
+    expression, key, count,
     when=ALWAYS, additional_args={}, description=''
 ) => get_definition(
     {
+        expression,
         key,
-        value
+        count
     },
     {
-        label: 'Flow - Group - Set Global',
-        method: 'set_global',
-        module: 'group',
+        label: 'Flow - Manifest - Evaluate Workitems',
+        method: 'evaluate_workitems',
+        module: 'manifest',
         name: 'flow'
     },
     when, additional_args, description

@@ -2,17 +2,19 @@ import { ALWAYS } from './../../constants';
 import { get_definition } from './../../base';
 
 export const set_global = (
-    key, value,
+    package_name, revision, key, value,
     when=ALWAYS, additional_args={}, description=''
 ) => get_definition(
     {
+        package: package_name,
+        revision,
         key,
         value
     },
     {
-        label: 'Flow - Group - Set Global',
+        label: 'Flow - Package - Set Global',
         method: 'set_global',
-        module: 'group',
+        module: 'package',
         name: 'flow'
     },
     when, additional_args, description

@@ -18,7 +18,7 @@ export const new_revision = (
     {
         label: 'Flow - Artifact - New Revision',
         method: 'register_artifact',
-        module: 'pipeline',
+        module: 'artifact',
         name: 'flow'
     },
     when, additional_args, description
