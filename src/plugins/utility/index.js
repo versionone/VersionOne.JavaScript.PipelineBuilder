@@ -10,6 +10,7 @@ import { loop } from './loop';
 import { end } from './end';
 import { http } from './http';
 import { log } from './log';
+import { sleep } from './sleep';
 
 export const utility = {
     conditional,
@@ -23,5 +24,6 @@ export const utility = {
     loop,
     end,
     http,
-    log
+    log,
+    sleep
 };
