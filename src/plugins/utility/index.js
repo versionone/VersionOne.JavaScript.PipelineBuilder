@@ -12,6 +12,7 @@ import { http } from './http';
 import { log } from './log';
 import { sleep } from './sleep';
 import { parse_data } from './parse_data';
+import { get_next_id } from './get_next_id';
 
 export const utility = {
     conditional,
@@ -27,5 +28,6 @@ export const utility = {
     http,
     log,
     sleep,
-    parse_data
+    parse_data,
+    get_next_id
 };
