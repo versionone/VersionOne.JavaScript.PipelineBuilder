@@ -1,6 +1,6 @@
 import { get_definition } from './../base';
 
-export const set_workitem_status = (
+export const set_workitem_attributes = (
     workitem_number, attributes='', skip_if_closed='true', instance_name,
     when, additional_args, description
 ) => get_definition({

@@ -1,6 +1,6 @@
 import { get_definition } from './../base';
 
-export const custom_query = (
+export const specify_phase = (
     phase, package_name, package_label, revision, full_version, instance_name, is_required,
     when, additional_args, description
 ) => get_definition({
