@@ -16,6 +16,7 @@ import { get_next_id } from './get_next_id';
 import { find_in_array } from './find_in_array';
 import { python_script } from './python_script';
 import { add_manifest } from './bucket/add_manifest';
+import { get_globals } from './bucket/get_globals';
 
 export const utility = {
     conditional,
@@ -35,5 +36,6 @@ export const utility = {
     get_next_id,
     find_in_array,
     python_script,
-    add_manifest
+    add_manifest,
+    get_globals
 };
