@@ -46,14 +46,12 @@
       "transform-runtime"
     ],
     "ignore": [
-      "./tests/",
       "*.spec.js"
     ]
   },
   "ava": {
     "files": [
-      "./tests/**/*.test.js",
-      "./src/**/*.spec.js"
+      "*.spec.js"
     ],
     "source": [
       "./src/**/*.js"
