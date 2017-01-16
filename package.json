@@ -16,10 +16,8 @@
     "javascript"
   ],
   "author": "walkerrandolphsmith@gmail.com",
-  "license": "ISC",
-  "dependencies": {
-
-  },
+  "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
     "ava": "^0.17.0",
     "babel-cli": "^6.18.0",
