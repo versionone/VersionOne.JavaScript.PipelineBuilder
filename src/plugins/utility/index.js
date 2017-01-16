@@ -7,6 +7,7 @@ import { junit_results } from './junit_results';
 import { show_workspace_data } from './show_workspace_data';
 import { apply_label } from './apply_label';
 import { loop } from './loop';
+import { end } from './end';
 
 export const utility = {
     conditional,
@@ -17,5 +18,6 @@ export const utility = {
     junit_results,
     show_workspace_data,
     apply_label,
-    loop
+    loop,
+    end
 };
