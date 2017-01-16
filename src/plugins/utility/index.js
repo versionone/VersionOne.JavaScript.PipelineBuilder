@@ -4,6 +4,7 @@ import { get_registry } from './get_registry';
 import { set_registry } from './set_registry';
 import { wait_for_data } from './wait_for_data';
 import { junit_results } from './junit_results';
+import { show_workspace_data } from './show_workspace_data';
 
 export const utility = {
     conditional,
@@ -11,5 +12,6 @@ export const utility = {
     get_registry,
     set_registry,
     wait_for_data,
-    junit_results
+    junit_results,
+    show_workspace_data
 };
