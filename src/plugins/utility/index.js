@@ -17,6 +17,7 @@ import { find_in_array } from './find_in_array';
 import { python_script } from './python_script';
 import { add_manifest } from './bucket/add_manifest';
 import { get_globals } from './bucket/get_globals';
+import { set_global } from './bucket/set_global';
 
 export const utility = {
     conditional,
@@ -37,5 +38,6 @@ export const utility = {
     find_in_array,
     python_script,
     add_manifest,
-    get_globals
+    get_globals,
+    set_global
 };
