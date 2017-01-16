@@ -1,9 +1,8 @@
-import { ALWAYS } from './../constants';
 import { get_definition } from './../base';
 
 export const custom_query = (
     phase, package_name, package_label, revision, full_version, instance_name, is_required,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition({
         phase,
         package_name,

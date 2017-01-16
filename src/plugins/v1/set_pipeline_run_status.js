@@ -1,9 +1,8 @@
-import { ALWAYS } from './../constants';
 import { get_definition } from './../base';
 
 export const set_pipeline_run_status = (
     build_run_oid, new_status, set_workitems_as_complete='true', instance_name,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition({
         build_run: build_run_oid,
         complete_workitems: set_workitems_as_complete,

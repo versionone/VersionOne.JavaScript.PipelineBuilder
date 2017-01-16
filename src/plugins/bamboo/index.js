@@ -1,9 +1,8 @@
-import { ALWAYS } from './../constants';
 import { get_definition } from './../base';
 
 const build = (
     build_id, revision, parameters, wait='true', inherit_build_status='true', instance_name,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition({
     build_id,
         revision,

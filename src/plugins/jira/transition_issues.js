@@ -1,9 +1,8 @@
-import { ALWAYS } from './../constants';
 import { get_definition } from './../base';
 
 export const transition_issues = (
     transition_name, resolution_name, instance_name,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition({
         transition_name,
         resolution_name,

@@ -1,9 +1,8 @@
-import { ALWAYS } from './../constants';
 import { get_definition } from './../base';
 
 export const set_workitem_status = (
     number, status, current_status, instance_name,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition({
         current_status,
         instance_name,

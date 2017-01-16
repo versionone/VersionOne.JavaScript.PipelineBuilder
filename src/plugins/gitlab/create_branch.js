@@ -1,9 +1,8 @@
-import { ALWAYS } from './../constants';
 import { get_definition } from './../base';
 
 export const create_branch = (
     project, reference, branch_name, failifexists='false', instance_name,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition({
         ns_project: project,
         reference,

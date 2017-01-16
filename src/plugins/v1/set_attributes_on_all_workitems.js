@@ -1,9 +1,8 @@
-import { ALWAYS } from './../constants';
 import { get_definition } from './../base';
 
 export const set_attributes_on_all_workitems = (
     attributes='', skip_if_closed='true', instance_name,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition({
         attributes,
         skip_on_closed: skip_if_closed,

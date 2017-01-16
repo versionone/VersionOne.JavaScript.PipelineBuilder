@@ -1,9 +1,8 @@
-import { ALWAYS } from './../../constants';
 import { get_definition } from './../../base';
 
 export const initiate = (
     defintion, project, group, start_now=false, initial_data,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition(
     {
         pipeline: defintion,

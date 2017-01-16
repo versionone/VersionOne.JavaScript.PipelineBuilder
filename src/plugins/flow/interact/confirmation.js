@@ -1,4 +1,4 @@
-import { ALWAYS } from './../constants';
+import { ALWAYS } from './../../constants';
 
 export const confirmation = (
     title, text, asssign_to=[], tags=[],

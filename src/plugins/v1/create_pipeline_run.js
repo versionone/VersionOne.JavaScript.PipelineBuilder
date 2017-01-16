@@ -1,9 +1,8 @@
-import { ALWAYS } from './../constants';
 import { get_definition } from './../base';
 
 export const create_pipeline_run = (
     build_project, name, reference, initial_status='In Progress', target_key, instance_name,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition({
         broid_target_key: target_key,
         build_project,

@@ -1,8 +1,9 @@
-import { ALWAYS } from './../../constants';
 import { get_definition } from './../../base';
 
-export const set_global = (name, key, value, create=true, required=true, when=ALWAYS,
-                            additional_args={}, description='') => get_definition({
+export const set_global = (
+    name, key, value, create=true, required=true,
+    when, additional_args, description
+) => get_definition({
         key: key,
         bucket: name,
         value,

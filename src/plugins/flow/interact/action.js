@@ -1,4 +1,4 @@
-import { ALWAYS } from './../constants';
+import { ALWAYS } from './../../constants';
 
 export const action = (
     asssign_to=[], definition, tags=[],

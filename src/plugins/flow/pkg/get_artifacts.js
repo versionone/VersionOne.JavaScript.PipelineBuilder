@@ -1,9 +1,8 @@
-import { ALWAYS } from './../../constants';
 import { get_definition } from './../../base';
 
 export const get_artifacts = (
     package_name, revision, artifact_key,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition(
     {
         package: package_name,

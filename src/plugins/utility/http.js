@@ -1,9 +1,9 @@
-import { ALWAYS, GET } from './../constants';
+import { GET } from './../constants';
 import { get_definition } from './../base';
 
 export const http = (
     url, headers, http_verb=GET, data, key,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition({
         data,
         headers,

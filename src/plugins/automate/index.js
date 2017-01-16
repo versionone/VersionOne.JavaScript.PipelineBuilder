@@ -1,9 +1,8 @@
-import { ALWAYS } from './../constants';
 import { get_definition } from './../base';
 
 const run_task = (
     task, version, initial_data,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition(
     {
         task, version, initial_data

@@ -1,9 +1,9 @@
-import { ALWAYS, SUCCESS } from './../constants';
+import { SUCCESS } from './../constants';
 import { get_definition } from './../base';
 
 export const end = (
     status=SUCCESS,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition({
         status
     },

@@ -1,10 +1,9 @@
-import { ALWAYS } from './../constants';
 import { get_definition } from './../base';
 
 export const build = (
     build_id, parameters={}, branch_name, commit_id, snapshot_id,
     vcs_instance_id, time_out, wait, inherit_build_status, instance_name,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition({
         build_id,
         params: parameters,

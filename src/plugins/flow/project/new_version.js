@@ -1,9 +1,8 @@
-import { ALWAYS } from './../../constants';
 import { get_definition } from './../../base';
 
 export const new_version = (
     to_version, increment,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition(
     {
         to_version,

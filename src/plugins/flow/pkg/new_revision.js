@@ -1,9 +1,8 @@
-import { ALWAYS } from './../../constants';
 import { get_definition } from './../../base';
 
 export const new_revision = (
     package_name, version, full_version, globals_key, workspace_key,
-    when=ALWAYS, additional_args={}, description=''
+    when, additional_args, description
 ) => get_definition(
     {
         package: package_name,

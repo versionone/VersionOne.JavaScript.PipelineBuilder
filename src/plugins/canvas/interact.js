@@ -1,4 +1,4 @@
-import { ALWAYS } from './../constants';
+import { ALWAYS } from './../../constants';
 
 export const interact = (
     resource, tags=[],
