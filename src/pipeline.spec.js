@@ -99,6 +99,10 @@ test('deploy plugin exists', t => {
     t.true(plugins.hasOwnProperty('deploy'));
 });
 
+test('flow plugin exists', t => {
+    t.true(plugins.hasOwnProperty('flow'));
+});
+
 test('github plugin exists', t => {
     t.true(plugins.hasOwnProperty('github'));
 });

@@ -3,6 +3,7 @@ import { bamboo } from './plugins/bamboo';
 import { bitbucket } from './plugins/bitbucket';
 import { canvas } from './plugins/canvas';
 import { deploy } from './plugins/deploy';
+import { flow } from './plugins/flow';
 import { github } from './plugins/github';
 import { gitlab } from './plugins/gitlab';
 import { hipchat } from './plugins/hipchat';
@@ -19,6 +20,7 @@ export const plugins = {
     bitbucket,
     canvas,
     deploy,
+    flow,
     github,
     gitlab,
     hipchat,
