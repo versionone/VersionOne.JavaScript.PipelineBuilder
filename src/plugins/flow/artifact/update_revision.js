@@ -1,7 +1,7 @@
-import { ALWAYS } from './../constants';
-import { get_definition } from './../base';
+import { ALWAYS } from './../../constants';
+import { get_definition } from './../../base';
 
-export const new_revision = (
+export const update_revision = (
     project, artifact_name, branch, location, version, build_id, build_url, build_details,
     when=ALWAYS, additional_args={}, description=''
 ) => get_definition(
@@ -16,8 +16,8 @@ export const new_revision = (
         project_name: project
     },
     {
-        label: 'Flow - Artifact - New Revision',
-        method: 'register_artifact',
+        label: 'Flow - Artifact - Update Revision',
+        method: 'update_artifact_revision',
         module: 'pipeline',
         name: 'flow'
     },

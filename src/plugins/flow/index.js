@@ -1,5 +1,5 @@
-import { new_revision } from './new_revision';
+import { artifact } from './artifact';
 
 export const flow = {
-    new_revision
+    artifact
 };
