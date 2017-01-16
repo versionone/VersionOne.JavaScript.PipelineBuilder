@@ -1,8 +1,10 @@
 import { ALWAYS } from './../constants';
 import { get_definition } from './../base';
 
-export const loop = (action, iterator, when=ALWAYS,
-                     additional_args={}, description='') => get_definition({
+export const loop = (
+    action, iterator,
+    when=ALWAYS, additional_args={}, description=''
+) => get_definition({
         action: action.plugin,
         iterator
     },

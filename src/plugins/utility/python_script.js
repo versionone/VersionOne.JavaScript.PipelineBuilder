@@ -1,7 +1,10 @@
 import { ALWAYS } from './../constants';
 import { get_definition } from './../base';
 
-export const python_script = (code, when=ALWAYS, additional_args={}, description='') => get_definition({
+export const python_script = (
+    code,
+    when=ALWAYS, additional_args={}, description=''
+) => get_definition({
         code
     },
     {

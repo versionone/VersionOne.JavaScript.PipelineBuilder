@@ -1,8 +1,10 @@
 import { ALWAYS } from './../constants';
 import { get_definition } from './../base';
 
-export const get_registry = (key, name, required=true, when=ALWAYS,
-    additional_args={}, description='') => get_definition({
+export const get_registry = (
+    key, name, required=true,
+    when=ALWAYS, additional_args={}, description=''
+) => get_definition({
         key,
         name,
         required: String(required)

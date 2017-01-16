@@ -1,8 +1,10 @@
 import { ALWAYS } from './../constants';
 import { get_definition } from './../base';
 
-export const parse_data = (source, expression, target, when=ALWAYS,
-                             additional_args={}, description='') => get_definition({
+export const parse_data = (
+    source, expression, target,
+    when=ALWAYS, additional_args={}, description=''
+) => get_definition({
         source,
         expression,
         target
