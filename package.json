@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run specs && npm run lint",
-    "specs": "ava",
-    "lint": "eslint -c .eslintrc --cache ."
+    "specs": "ava --verbose",
+    "lint": "eslint -c .eslintrc --cache .",
+    "build": "babel src -d dist"
   },
   "keywords": [
     "continuum",
@@ -16,10 +17,15 @@
   ],
   "author": "walkerrandolphsmith@gmail.com",
   "license": "ISC",
+  "dependencies": {
+
+  },
   "devDependencies": {
     "ava": "^0.17.0",
     "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
     "babel-eslint": "^6.0.0-beta.6",
+    "babel-loader": "^6.2.10",
     "babel-plugin-espower": "^2.3.1",
     "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-es2015": "^6.18.0",
@@ -38,6 +44,10 @@
     "plugins": [
       "espower",
       "transform-runtime"
+    ],
+    "ignore": [
+      "./tests/",
+      "*.spec.js"
     ]
   },
   "ava": {
