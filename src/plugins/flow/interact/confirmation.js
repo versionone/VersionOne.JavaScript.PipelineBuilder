@@ -1,16 +1,15 @@
-import { ALWAYS } from './../../constants';
+import { get_definition_with_tags } from './../../base';
 
 export const confirmation = (
     title, text, asssign_to=[], tags=[],
-    when=ALWAYS, additional_args={}, description=''
-) => ({
-    name: description,
-    plugin: {
-        args: Object.assign(additional_args, {
-            assignto: asssign_to,
-            text,
-            title
-        }),
+    when, additional_args, description
+) => get_definition_with_tags(
+    {
+        assignto: asssign_to,
+        text,
+        title
+    },
+    {
         kind: 'actions',
         label: 'Flow - Interact - Confirmation',
         method: 'confirmation',
@@ -18,6 +17,5 @@ export const confirmation = (
         name: 'flow',
         type: 'interaction'
     },
-    tags,
-    when
-});
+    tags, when, additional_args, description
+);

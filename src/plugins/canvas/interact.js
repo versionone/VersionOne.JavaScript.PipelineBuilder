@@ -1,14 +1,11 @@
-import { ALWAYS } from './../../constants';
+import { get_definition_with_tags } from './../base';
 
 export const interact = (
     resource, tags=[],
-    when=ALWAYS, additional_args={}, description=''
-) => ({
-    name: description,
-    plugin: {
-        args: Object.assign(additional_args, {
-            resource
-        }),
+    when, additional_args, description
+) => get_definition_with_tags({
+        resource
+    }, {
         kind: 'canvas',
         label: 'Canvas - Get',
         method: 'get',
@@ -16,6 +13,5 @@ export const interact = (
         name: 'canvas',
         type: 'interaction'
     },
-    tags,
-    when
-});
+    tags, when, additional_args, description
+);
