@@ -5,6 +5,7 @@ import { set_registry } from './set_registry';
 import { wait_for_data } from './wait_for_data';
 import { junit_results } from './junit_results';
 import { show_workspace_data } from './show_workspace_data';
+import { apply_label } from './apply_label';
 
 export const utility = {
     conditional,
@@ -13,5 +14,6 @@ export const utility = {
     set_registry,
     wait_for_data,
     junit_results,
-    show_workspace_data
+    show_workspace_data,
+    apply_label
 };
