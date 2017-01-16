@@ -15,6 +15,7 @@ import { parse_data } from './parse_data';
 import { get_next_id } from './get_next_id';
 import { find_in_array } from './find_in_array';
 import { python_script } from './python_script';
+import { add_manifest } from './bucket/add_manifest';
 
 export const utility = {
     conditional,
@@ -33,5 +34,6 @@ export const utility = {
     parse_data,
     get_next_id,
     find_in_array,
-    python_script
+    python_script,
+    add_manifest
 };
