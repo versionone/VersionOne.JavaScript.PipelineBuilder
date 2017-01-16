@@ -9,6 +9,7 @@ import { apply_label } from './apply_label';
 import { loop } from './loop';
 import { end } from './end';
 import { http } from './http';
+import { log } from './log';
 
 export const utility = {
     conditional,
@@ -21,5 +22,6 @@ export const utility = {
     apply_label,
     loop,
     end,
-    http
+    http,
+    log
 };
