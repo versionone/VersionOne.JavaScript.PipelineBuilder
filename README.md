@@ -1,4 +1,4 @@
-# VersionOne.PipelineBuilder [![Codeship][ci-badge]][ci]
+# Continuum Pipeline Builder JS SDK 
 
 Use this JavaScript library to build Continuum Pipeline Definitions with code! 
 
@@ -89,25 +89,20 @@ const pipeline = create_pipeline('pipeline as code', 'description', [
 ```
 
 
-##Development
+## Development
 Install Node.js
 
-####Install Node Modules
+#### Install Node Modules
 ```bash
 npm install
 ```
 
-####Run Linter
+#### Run Linter
 ```bash
 npm run lint
 ```
 
-####Run Tests
+#### Run Tests
 ```bash
 npm t
 ```
-
-
-[ci]: http://img.shields.io/codeship/b8421c60-bc39-0134-78ef-5e9a8948951f.svg?style=flat-square
-[ci]: https://codeship.com/projects/b8421c60-bc39-0134-78ef-5e9a8948951f/status?branch=master
-[ci-badge]: http://img.shields.io/codeship/b8421c60-bc39-0134-78ef-5e9a8948951f.svg?style=flat-square

@@ -1,7 +1,10 @@
 .idea
-.DS_Store
-node_modules/
 *.log
 **/*.spec.js
 /examples
 .eslintcache
+Dockerfile
+src
+.eslintignore
+.eslintrc
+ACKNOWLEDGEMENTS.md

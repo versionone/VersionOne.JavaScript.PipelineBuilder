@@ -1,5 +1,5 @@
 {
-  "name": "pipelineBuilder",
+  "name": "@versionone/ctm-pipeline-builder-sdk",
   "version": "1.0.0",
   "description": "Create VersionOne Continuum pipeline definitions with javascript!",
   "main": "index.js",
