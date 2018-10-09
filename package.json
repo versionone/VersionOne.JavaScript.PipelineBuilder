@@ -1,9 +1,9 @@
 {
   "name": "@versionone/ctm-pipeline-builder-sdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create VersionOne Continuum pipeline definitions with javascript!",
   "main": "dist/index.js",
-  "types": "dict/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "npm run specs && npm run lint",
     "specs": "ava --verbose",
