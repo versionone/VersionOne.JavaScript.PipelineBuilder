@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "Create VersionOne Continuum pipeline definitions with javascript!",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "index.d.ts",
   "scripts": {
     "test": "npm run specs && npm run lint",
     "specs": "ava --verbose",
