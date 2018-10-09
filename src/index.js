@@ -8,8 +8,11 @@ import { github } from './plugins/github';
 import { gitlab } from './plugins/gitlab';
 import { hipchat } from './plugins/hipchat';
 import { jenkins } from './plugins/jenkins';
+import { jira } from './plugins/jira';
 import { octopus } from './plugins/octopus';
 import { skytap } from './plugins/skytap';
+import { slack } from './plugins/slack';
+import { teamcity } from './plugins/teamcity';
 import { tfs } from './plugins/tfs';
 import { utility } from './plugins/utility';
 import { v1 } from './plugins/v1';
@@ -25,8 +28,11 @@ export const plugins = {
     gitlab,
     hipchat,
     jenkins,
+    jira,
     octopus,
     skytap,
+    slack,
+    teamcity,
     tfs,
     utility,
     v1
