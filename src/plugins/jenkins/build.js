@@ -16,7 +16,8 @@ export const build = (
         label: 'Jenkins - Build',
         method: 'build',
         module: 'job',
-        name: 'jenkins'
+        name: 'jenkins',
+        type: 'external'
     },
     when, additional_args, description
 );

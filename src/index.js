@@ -17,6 +17,10 @@ import { tfs } from './plugins/tfs';
 import { utility } from './plugins/utility';
 import { v1 } from './plugins/v1';
 
+import * as cts from './plugins/constants';
+
+export const constants = { ...cts };
+
 export const plugins = {
     automate,
     bamboo,

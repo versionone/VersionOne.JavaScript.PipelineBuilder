@@ -8,4 +8,4 @@ CMD ["/bin/bash"]
 # docker image build --tag ctm-pb-sdk $PWD
 
 # Run
-# docker container run -it --rm -v $PWD:/sdk ctm-pb-sdk
+# docker container run -u 1000:1000 -it --rm -v $PWD:/sdk -w /sdk ctm-pb-sdk
