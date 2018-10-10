@@ -9,3 +9,13 @@ CMD ["/bin/bash"]
 
 # Run
 # docker container run -u 1000:1000 -it --rm -v $PWD:/sdk -w /sdk ctm-pb-sdk
+
+
+# Steps to build:
+# rm -rf dist/
+# have a clean git workspace
+# npm version BUMP
+# git push
+# move into container
+# npm login
+# npm publish --access public

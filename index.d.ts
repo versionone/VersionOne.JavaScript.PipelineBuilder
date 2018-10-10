@@ -147,8 +147,8 @@ export const plugins: {
   utility: {
     conditional(
       expression: string,
-      if_block: string,
-      else_block: string,
+      if_block: Definition,
+      else_block: Definition,
       when: WhenConstants,
       additional_args: {},
       description: string
