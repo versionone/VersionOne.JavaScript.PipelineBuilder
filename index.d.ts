@@ -1,11 +1,22 @@
 export function create_pipeline(
   name: string,
   description: string,
-  phases: object[]
+  phases: object[],
+  team: string,
+  category: string,
+  globals: object
 ): {
   name: string;
   description: string;
   phases: object[];
+  team: string;
+  category: string;
+  globals: object;
+  actions: string;
+  dependencies: any[];
+  interactive: boolean;
+  pipelineglobals: object;
+  summary: any[];
 };
 export function create_phase(
   name: string,

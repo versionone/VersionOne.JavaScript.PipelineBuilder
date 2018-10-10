@@ -42,6 +42,20 @@ export const plugins = {
     v1
 };
 
+export const createReference = (key) => `[$ ${key} $]`;
+
 export const create_stage = (name='', steps=[]) => ({ name, steps });
 export const create_phase = (name='', stages=[]) => ({ name, stages });
-export const create_pipeline = (name='', description='', phases=[]) => ({ name, description, phases });
+export const create_pipeline = (name='', description='', team='Default', category='', globals={}, phases=[]) => ({
+    name,
+    description,
+    team,
+    category,
+    globals,
+    phases,
+    actions: '',
+    dependencies: [],
+    interactive: false,
+    pipelineglobals: {},
+    summary: []
+});

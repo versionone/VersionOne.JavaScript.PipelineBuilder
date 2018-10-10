@@ -15,7 +15,8 @@ export const create_pipeline_run = (
         label: 'VersionOne - Create Pipeline Run',
         method: 'create_buildrun',
         module: 'main',
-        name: 'v1plugin'
+        name: 'v1plugin',
+        type: 'external'
     },
     when, additional_args, description
 );

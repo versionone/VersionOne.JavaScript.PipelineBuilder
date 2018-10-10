@@ -13,7 +13,8 @@ export const set_pipeline_run_status = (
         label: 'VersionOne - Set Pipeline Run Status',
         method: 'set_buildrun_status',
         module: 'main',
-        name: 'v1plugin'
+        name: 'v1plugin',
+        type: 'external'
     },
     when, additional_args, description
 );
