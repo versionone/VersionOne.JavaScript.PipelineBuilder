@@ -42,7 +42,7 @@ export const plugins = {
     v1
 };
 
-export const createReference = (key) => `[$ ${key} $]`;
+export const create_reference = (key) => `[$ ${key} $]`;
 
 export const create_stage = (name='', steps=[]) => ({ name, steps });
 export const create_phase = (name='', stages=[]) => ({ name, stages });
