@@ -1,3 +1,5 @@
+export function create_reference(key: string): string;
+
 export function create_pipeline(
   name: string,
   description: string,
