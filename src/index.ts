@@ -46,7 +46,7 @@ export const create_reference = (key) => `[$ ${key} $]`;
 
 export const create_stage = (name='', steps=[]) => ({ name, steps });
 export const create_phase = (name='', stages=[]) => ({ name, stages });
-export const create_pipeline = (name='', description='', team='Default', category='', globals={}, phases=[]) => ({
+export const create_pipeline = (name='', description='', phases=[], team='Default', category='', globals={}) => ({
     name,
     description,
     team,

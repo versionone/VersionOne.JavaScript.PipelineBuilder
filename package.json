@@ -5,10 +5,11 @@
   "main": "dist/index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "npm run specs && npm run lint",
+    "test": "npm run build && npm run specs && npm run lint",
     "specs": "ava --verbose",
     "lint": "eslint -c .eslintrc --cache .",
-    "build": "babel src -d dist"
+    "build": "tsc -p src --outDir dist -d true",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "continuum",
@@ -53,7 +54,7 @@
       "*.spec.js"
     ],
     "source": [
-      "./src/**/*.js"
+      "dist/**/*.js"
     ],
     "concurrency": 10,
     "require": [
