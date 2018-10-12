@@ -10,6 +10,7 @@ import { hipchat } from './plugins/hipchat';
 import { jenkins } from './plugins/jenkins';
 import { jira } from './plugins/jira';
 import { octopus } from './plugins/octopus';
+import { ossum } from './plugins/ossum';
 import { skytap } from './plugins/skytap';
 import { slack } from './plugins/slack';
 import { teamcity } from './plugins/teamcity';
@@ -34,6 +35,7 @@ export const plugins = {
     jenkins,
     jira,
     octopus,
+    ossum,
     skytap,
     slack,
     teamcity,
